@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu Click test</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+        <style>
+            .text-center{
+                text-align: center;
+                padding: 10px;
+                font-size: 24px;
+            }
+
+            @media screen and (max-width: 575px) {
+                .text-center{
+                    text-align: right;
+                }
+            }
+
+            .FristMenu{
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                z-index: 10;
+                width: 250px;
+                padding: 20px;
+                overflow-y: scroll;
+                max-height: 100%;
+                background-color: rgb(104, 104, 104);
+            }
+
+            .FristMenu ul{
+                list-style: none;
+                padding: 0;
+                color: white;
+                font-size: 18px;
+            }
+
+            .FristMenu ul li:not(:last-child){
+                padding: 10px 0;
+                cursor: pointer;
+                border-bottom: 1px solid rgb(177, 177, 177);
+            }
+
+            .FristMenu ul li{
+                padding: 5px 0;
+            }
+
+            .FristMenu ul li a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .FristMenu ul li ul li i{
+                margin-right: .3rem;
+            }
+
+            .FristMenuli{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .CategorisDropdrown, .Categoris2Dropdrown{
+                display: none;
+                background-color: rgb(190, 190, 190);
+                color: white;
+                padding: 7px !important;
+                border-radius: 7px;
+                color: black !important;
+                margin-top: 7px;
+            }
+
+            .CategorisDropdrown li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .Btn{
+                padding: 11px 9px;
+                border: 1px solid rgb(77, 77, 77);
+                margin-top: .5rem;
+                display: block;
+                border-radius: 5px;
+            }
+
+            .red{
+                background-color: #e00e0e;
+                border: none;
+            }
+
+            .CategorisDropdrown li{
+                position: relative;
+            }
+
+            .CategorisDropdrown li ul{
+                display: none;
+                position: absolute;
+                width: 220px;
+                /* right: -250px; */
+                top: 40px;
+                /* left: -12px; */
+                z-index: 1000;
+                background-color: white;
+                color: black !important;
+                padding: 10px !important;
+                border-radius: 7px;
+            }
+
+            .CategorisDropdrown li:hover .CategorisDropdrownDrop{
+                display: block;
+                /* position: relative; */
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <nav>
+            <div class="text-center">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="FristMenu">
+                <ul>
+                    <li>
+                        <div class="FristMenuli FristMenuli1" >
+                            <span>Categoris</span>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+
+                        <ul class="CategorisDropdrown">
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-chess-rook"></i>
+                                    <span>Categoris</span>
+                                </div>
+
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+
+                                <ul class="CategorisDropdrownDrop">
+                                    <li>
+                                        DropCategory1
+                                    </li>
+                                    <li>
+                                        DropCategory2
+                                    </li>
+                                    <li>
+                                        DropCategory3
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-chess-queen"></i>
+                                    <span>Categoris</span>
+                                </div>
+                                
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+
+                                <ul class="CategorisDropdrownDrop">
+                                    <li>
+                                        <a href="#">
+                                            DropCategory4
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            DropCategory5
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            DropCategory6
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-chess-queen"></i>
+                                    <span>Categoris</span>
+                                </div>
+                                
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+                            
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-chess-queen"></i>
+                                    <span>Categoris</span>
+                                </div>
+                                
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+                            
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-chess-queen"></i>
+                                    <span>Categoris</span>
+                                </div>
+                                
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-chess-queen"></i>
+                                    <span>Categoris</span>
+                                </div>
+                                
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-chess-queen"></i>
+                                    <span>Categoris</span>
+                                </div>
+                                
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+                            
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-chess-queen"></i>
+                                    <span>Categoris</span>
+                                </div>
+                                
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+                            
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-chess-queen"></i>
+                                    <span>Categoris</span>
+                                </div>
+                                
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="FristMenuli FristMenuli2">
+                            <span>Categoris2</span>
+                            <span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+
+                        <ul class="Categoris2Dropdrown">
+                            <li>
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                                <span>Categoris</span>
+                            </li>
+
+                            <li>
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                                <span>Categoris</span>
+                            </li>
+
+                            <li>
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                                <span>Categoris</span>
+                            </li>
+                            
+                            <li>
+                                <span><i class="fa-solid fa-angle-right"></i></span>
+                                <span>Categoris</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            item3
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="Btn">
+                            Login
+                        </a>
+
+                        <a href="#" class="Btn red">
+                            SingIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
